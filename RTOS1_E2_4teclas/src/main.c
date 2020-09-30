@@ -32,7 +32,7 @@ int main( void )
 
 	keys_Init();							// Inicializar estructura de datos
 	leds_Init();
-	tecla_led_init();
+
     // Iniciar scheduler
     vTaskStartScheduler();				// Enciende tick | Crea idle y pone en ready | Evalua las tareas creadas | Prioridad mas alta pasa a running
 

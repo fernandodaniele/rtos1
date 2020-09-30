@@ -82,21 +82,4 @@ void inc_c1();
 void clear_diff();
 void tecla_led_init(void);
 
-typedef struct
-{
-	t_key_config tecla;			//config
-	gpioMap_t led;				//config
-
-	TickType_t tiempo_medido;	//variables
-	keys_ButtonState_t state;//variables
-	TickType_t tiempo_down;		//variables
-
-	uint8_t contFalling  ;		//variables
-	uint8_t contRising  ;		//variables
-
-
-} tLedTecla;
-
-
-
 #endif /* PDM_ANTIRREBOTE_MEF_INC_DEBOUNCE_H_ */
